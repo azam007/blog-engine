@@ -6,4 +6,9 @@
     <h1>Selamat Datang di Blog</h1>
     <p>Test Test Test  Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test</p>
   </body>
+    <ul>
+      <% @post.each do |post| %>
+        <li> Judul <%= post.title %> Content: <%= post.content %></li>
+      <% end %>
+    </ul>
 </html>
