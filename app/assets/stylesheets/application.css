@@ -121,6 +121,10 @@ h1 {
     text-transform: capitalize;
     color: white;
 }
+h1 a{
+  color: white;
+  text-decoration: none;
+}
 .content {
     background: #D5D5D5;
     margin-left: 40px;

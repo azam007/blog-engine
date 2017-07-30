@@ -3,4 +3,6 @@ Rails.application.routes.draw do
  resources :posts, :index    # tag ini sama kayak -> get '/posts/' => 'posts#index'
  resources :posts, :show     # tag ini sama kayak -> get '/posts/:id' => 'posts#show' 
  resources :posts, :new
+ resources :posts, :create
+ resources :posts, :post
 end
