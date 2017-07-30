@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ZamBlog</title>
+    <title><%= $judul %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,26 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="wrapper" class="wrapper">
+        <header>
+         <div id="logo"><%= $judul %></div>
+         <nav>
+             <ul>
+                  <li><a href="#">Home</a></li>
+                 <li><a href="#">Blog</a></li>
+                  <li><a href="#">Kontak</a></li>
+                <li><a href="#">Sosial Media</a></li>
+             </ul>
+        </nav>
+        </header>
+        <article>
+          <%= yield %>
+        </article>
+
+        <footer>
+            <div class="copy">Copyright &copy 2017 By Rifqi Khoeruman Azam</div>
+            <div class="page"><a href="#">Home</a> <a href="#">Blog</a> <a href="#">Kontak</a> <a href="#">Sosial Media</a></div>
+        </footer>
+    </div>
   </body>
 </html>
