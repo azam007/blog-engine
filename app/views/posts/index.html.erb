@@ -1,13 +1,5 @@
-<html>
-  <head>
-   <title>Selamat Datang</title>
-  </head>
-  <body>
-    <h1>Selamat Datang di Blog</h1>
-  </body>
     <ul>
       <% @posts.each do |post| %>
         <li> Judul <%= post.title %> Content: <%= post.content %></li>
       <% end %>
     </ul>
-</html>

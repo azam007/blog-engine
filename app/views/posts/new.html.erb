@@ -1,0 +1,5 @@
+<%= form_tag(@posts) do %>
+  Judul : <%= text_field_tag(:nama) %><br>
+  Konten :<br/> <%= text_area_tag(:konten,"",size:"24x6") %> <br>
+<% concat submit_tag("Post") 
+end %>
