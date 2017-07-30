@@ -9,10 +9,10 @@ class PostsController < ApplicationController
     # @@judul
   end
   def new
-    @posting = Post.new
+    @post = Post.new
   end
   def create
-    @post.new(params[:post])
+    @post = Post.new(post_params)
     if @post.save
       raise 'post was successfully created'
     else
@@ -20,4 +20,8 @@ class PostsController < ApplicationController
     end
   end
 
+  private
+  def post_params
+    params.permit(:title, :content)
+  end
 end
