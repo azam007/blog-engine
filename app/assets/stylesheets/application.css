@@ -22,7 +22,7 @@
     src: asset-url("FjallaOne.ttf") format("truetype");
  }
  body {
-     background: url("bg.jpg") center center;
+     background: url("bg.jpg");
  }
  #wrapper{
     background: #fff;
@@ -159,4 +159,76 @@ footer .page a:after{
 }
 footer .page a:hover{
     color: #D79028;
+}
+
+
+
+/*#################### untuk style new post ###############################*/
+
+#posting {
+  min-width: 100px;
+  margin: 20px auto;
+  width: 250px;
+  position: relative;
+}
+.field {
+    margin: 10px 0;
+}
+.label {
+  background: #FAECBF;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #333;
+  border-radius: 10px;
+  display: inline-block;
+  width: auto;
+  margin: 0 0 4px 0;
+}
+/*input[type=text] {
+  width: 620px;
+}*/
+input[type=text], textarea{
+    width: 675px;
+    text-align: center;
+    margin-top: 5px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    font-size: 20px;
+    /*box-shadow: 0px 0px 3px #333;*/
+}
+input:hover, textarea:hover {
+    box-shadow: 0px 0px 3px rgba(223, 0, 0,0.4), 0px 0px 3px rgba(223, 0, 0,0.4), 0px 0px 5px rgba(223, 0, 0,0.4), 0px 0px 10px rgba(223, 0, 0,0.4);
+}
+input[type=text]:focus, textarea:focus {
+    border: 2px solid #E6C722;
+}
+textarea {
+  height: 250px;
+}
+input[type=submit]{
+    background: #00516A;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 2px solid #333;
+    border-radius: 10px;
+    width: 150px;
+    position: absolute;
+    margin-left: 520px;
+}
+input[type=submit]:hover{
+    background: #15353F;
+    color: #DEDA23;
+}
+input[type=submit]:active{
+    background: #0A2027;
+    color: #EBE8A4;
+}
+.new_artikel {
+    color: #AB1313;
+    font-family: sans-serif;
+    border-left: 4px groove #AB1313;
+    padding-left: 4px;
 }

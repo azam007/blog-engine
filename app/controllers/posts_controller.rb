@@ -1,5 +1,6 @@
 class PostsController < ApplicationController
   $judul = "ZamBlog"
+  $url = "http://localhost:3000/posts"
   def index
     @posts = Post.all
     # @@judul

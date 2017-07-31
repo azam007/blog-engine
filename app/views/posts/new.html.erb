@@ -1,5 +1,8 @@
-<%= form_tag(@post) do %>
-  Judul : <%= text_field_tag(:title) %><br>
-  Konten :<br/> <%= text_area_tag(:content,"",size:"24x6") %> <br>
+<div id="posting">
+<h1 class="new_artikel">Tambah Artikel</h1>
+<%= form_for(@post) do %>
+  <div class="field"><span class="label">Judul</span> <span class="titikdua">:</span> <br/><%= text_field_tag(:title) %></div>
+  <div class="field"><span class="label">Konten</span> <span class="titikdua">:</span><br/> <%= text_area_tag(:content,"",size:"24x6") %></div>
 <% concat submit_tag("Post") 
 end %>
+</div>
